@@ -34,10 +34,10 @@ li {
 	display: inline-block;
 	position: absolute;
 	/*使用过渡，形成图片切换时的动画*/
-	transition: all 1s;
+/*	transition: all 1s;
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
-	-ms-transition: all 1s;;
+	-ms-transition: all 1s;;*/
 }
 .li1 {
 	top: -75px;
