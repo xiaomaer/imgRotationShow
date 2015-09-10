@@ -2,11 +2,14 @@ window.addEventListener("load", load, false);
 document.addEventListener("click", handle, false);
 
 function load() {
-	var doc = document,
+		var doc = document,
 		refresh = doc.getElementById("refresh"),
-		list = doc.getElementById("list");
+		lists = doc.getElementsByTagName("li");
 	refresh.style.display = "none";
-	list.style.display = "block";
+	for(var i=0,len=lists.length;i<len;i++)
+	{
+		lists[i].style.display = "block";
+	}
 }
 
 function handle(envet) {
