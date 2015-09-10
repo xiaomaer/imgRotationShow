@@ -1,3 +1,10 @@
+window.onload=function(){
+	var doc=document,
+	    refresh=doc.getElementById("refresh"),
+	    bottom=doc.getElementById("bottom");
+	    refresh.style.display="none";
+	    bottom=bottom.style.display="block";
+};
 document.addEventListener("click", handle, false);
 
 function handle(envet) {
