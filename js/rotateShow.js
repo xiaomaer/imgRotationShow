@@ -1,17 +1,12 @@
-window.addEventListener("load", load, false);
+window.addEventListener("load",load,false);
 document.addEventListener("click", handle, false);
-
-function load() {
-		var doc = document,
-		refresh = doc.getElementById("refresh"),
-		lists = doc.getElementsByTagName("li");
-	refresh.style.display = "none";
-	for(var i=0,len=lists.length;i<len;i++)
-	{
-		lists[i].style.display = "block";
-	}
+function load(){
+	var doc=document,
+	    refresh=doc.getElementById("refresh"),
+	    bottom=doc.getElementById("bottom");
+	    refresh.style.display="none";
+	    bottom.style.display="block";
 }
-
 function handle(envet) {
 	var e = event || window.event, //兼容事件
 		target = e.target || e.srcElement, //事件目标
