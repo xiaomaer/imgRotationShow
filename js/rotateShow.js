@@ -1,11 +1,13 @@
-window.onload=function(){
-	var doc=document,
-	    refresh=doc.getElementById("refresh"),
-	    list=doc.getElementById("list");
-	    refresh.style.display="none";
-	    list.style.display="block";
-};
+window.addEventListener("load", load, false);
 document.addEventListener("click", handle, false);
+
+function load() {
+	var doc = document,
+		refresh = doc.getElementById("refresh"),
+		list = doc.getElementById("list");
+	refresh.style.display = "none";
+	list.style.display = "block";
+}
 
 function handle(envet) {
 	var e = event || window.event, //兼容事件
