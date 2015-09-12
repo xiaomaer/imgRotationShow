@@ -1,5 +1,5 @@
 window.addEventListener("load",load,false);
-document.addEventListener("click", handle, false);
+document.getElementById("list").addEventListener("click", handle, false);
 function load(){
 	var doc=document,
 	    refresh=doc.getElementById("refresh"),
