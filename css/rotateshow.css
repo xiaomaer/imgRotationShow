@@ -34,7 +34,6 @@ body {
 #list {
 	list-style-type: none;
 	width: 1000px;
-	height: 200px;
 }
 li {
 	display: inline-block;
